@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package sample_module_0406.sample_package_0406;
+
+option go_package="github.com/activezhao/sample_repo_0406/mmm/nnn/grpc-go/sample_module_0406/sample_package_0406";
+
+
+service Zhaoh0406 {
+    rpc SayHello (HelloRequest) returns (HelloReply);
+}
+
+
+message HelloRequest {
+    string msg = 1;
+}
+message HelloReply {
+    string msg = 1;
+    string code = 2;
+}
